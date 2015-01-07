@@ -1,0 +1,37 @@
+mtllib test.mtl
+
+object p1
+  shape plane
+    point 0 -1 0
+    normal 0 1 0
+  done
+  material white
+done
+
+object cone
+  shape cone
+    radius 1.5
+    height 4
+  done
+  material shiny
+  rotate 90 -1 0 0
+  translate 0 -1 -4
+done
+  
+object donut
+  shape torus
+    inner 0.5
+    outer 2
+  done
+  material shiny
+  rotate 90 -1 0 0
+  translate 0 3 -4
+done
+
+object ball
+  shape sphere
+    radius 1
+  done
+  material shiny
+  translate 0 6 -4
+done

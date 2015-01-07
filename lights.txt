@@ -1,0 +1,20 @@
+pointlight
+  loc 5 2 2
+  ambient 0.1 0.1 0.1
+  diffuse 0.8 0.8 0.8
+  specular 0.8 0.8 0.8
+done
+
+pointlight
+  loc 0 5 -2
+  ambient 0.0 0.0 0.1
+  diffuse 0.0 0.0 0.8
+  specular 0.0 0.0 0.8
+done
+
+pointlight
+  loc 2 5 -4
+  ambient 0.0 0.1 0.0
+  diffuse 0.0 0.8 0.0
+  specular 0.0 0.8 0.0
+done

@@ -1,0 +1,89 @@
+mtllib test.mtl
+
+object icoshahedron
+  shape model
+    file icosahedron.obj
+  done
+  material purple
+  scale 0.587785 0.587785 0.587785
+  translate 0 0 -1
+done
+
+object dragon
+  shape model
+    file dragon.obj
+  done
+  material purple
+  rotate 180 0 1 0
+  rotate 90 0 0 1
+  scale 5.0 5.0 5.0
+  translate 0 4 10
+done
+
+object s1
+  shape sphere
+    radius 1.0
+  done
+  material red
+  translate -1 -1 -2
+done
+
+object s2
+  shape sphere
+    radius 2.0
+  done
+  material purple
+  translate 2 1 -4
+done
+
+object p1
+  shape plane
+    point 0 -1 0
+    normal 0 1 0
+  done
+  material white
+done
+
+object c1
+  shape cone
+    radius 2
+    height 5
+  done
+  material red
+  rotate 90 -1 0 0
+  translate -1 -1 -4
+done
+
+object tube
+  shape cylinder
+    radius 1
+    height 8
+  done
+  material purple
+  rotate 90 0 -1 0
+  translate 5 0 -3
+done
+
+object donut
+  shape torus
+    inner 0.5
+    outer 2
+  done
+  material purple
+  rotate 90 -1 0 0
+  translate 2 3 -4
+done
+
+object teapot
+  shape teapot
+  done
+  material purple
+  scale 2.0 2.0 2.0
+done
+
+object knot
+  shape knot
+  done
+  material purple
+  scale 1.0 1.0 3.0
+done

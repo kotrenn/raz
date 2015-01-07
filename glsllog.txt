@@ -1,0 +1,5 @@
+
+Vertex shader failed to compile with the following errors:
+ERROR: 0:13: error(#160) Cannot convert from 'attribute 4-component vector of float' to 'default varying 3-component vector of float'
+ERROR: error(#273) 1 compilation errors.  No code generated
+

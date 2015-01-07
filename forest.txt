@@ -1,0 +1,688 @@
+mtllib test.mtl
+
+object p1
+  shape plane
+    point 0 0 0
+    normal 0 0 1
+  done
+  material green
+done
+
+object tower
+  shape cylinder
+    radius 1
+    height 8
+  done
+  material red
+done
+
+object cap
+  shape cone
+    radius 1
+    height 3
+  done
+  material red
+  translate 0 0 8
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.566
+    height 2.156
+  done
+  material brown
+  translate -8.514 7.532 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.227
+    height 3.707
+  done
+  material green
+  translate -8.514 7.532 2.156
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.360
+    height 2.604
+  done
+  material brown
+  translate -11.088 -5.481 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.785
+    height 4.022
+  done
+  material green
+  translate -11.088 -5.481 2.604
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.323
+    height 2.428
+  done
+  material brown
+  translate -18.167 10.572 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.685
+    height 3.453
+  done
+  material green
+  translate -18.167 10.572 2.428
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.245
+    height 2.114
+  done
+  material brown
+  translate 11.878 9.890 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.527
+    height 2.862
+  done
+  material green
+  translate 11.878 9.890 2.114
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.567
+    height 2.469
+  done
+  material brown
+  translate 3.907 -1.767 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.137
+    height 4.263
+  done
+  material green
+  translate 3.907 -1.767 2.469
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.216
+    height 2.288
+  done
+  material brown
+  translate -10.646 -4.316 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.437
+    height 3.020
+  done
+  material green
+  translate -10.646 -4.316 2.288
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.242
+    height 2.993
+  done
+  material brown
+  translate 17.163 14.038 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.501
+    height 4.928
+  done
+  material green
+  translate 17.163 14.038 2.993
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.259
+    height 1.961
+  done
+  material brown
+  translate -0.174 2.232 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.534
+    height 2.912
+  done
+  material green
+  translate -0.174 2.232 1.961
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.451
+    height 2.714
+  done
+  material brown
+  translate -7.393 2.845 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.928
+    height 3.363
+  done
+  material green
+  translate -7.393 2.845 2.714
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.509
+    height 2.833
+  done
+  material brown
+  translate -6.405 8.089 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.053
+    height 4.711
+  done
+  material green
+  translate -6.405 8.089 2.833
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.391
+    height 1.533
+  done
+  material brown
+  translate 2.648 -7.696 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.786
+    height 1.983
+  done
+  material green
+  translate 2.648 -7.696 1.533
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.534
+    height 2.419
+  done
+  material brown
+  translate 17.764 -17.442 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.111
+    height 3.054
+  done
+  material green
+  translate 17.764 -17.442 2.419
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.244
+    height 2.263
+  done
+  material brown
+  translate 9.908 -13.513 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.519
+    height 3.028
+  done
+  material green
+  translate 9.908 -13.513 2.263
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.448
+    height 2.004
+  done
+  material brown
+  translate 1.780 -10.687 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.966
+    height 2.718
+  done
+  material green
+  translate 1.780 -10.687 2.004
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.571
+    height 2.186
+  done
+  material brown
+  translate 14.073 19.813 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.195
+    height 2.856
+  done
+  material green
+  translate 14.073 19.813 2.186
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.339
+    height 2.268
+  done
+  material brown
+  translate -16.563 -5.219 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.724
+    height 3.475
+  done
+  material green
+  translate -16.563 -5.219 2.268
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.437
+    height 1.907
+  done
+  material brown
+  translate 15.236 -9.736 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.900
+    height 3.239
+  done
+  material green
+  translate 15.236 -9.736 1.907
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.326
+    height 1.794
+  done
+  material brown
+  translate -5.366 5.501 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.664
+    height 2.728
+  done
+  material green
+  translate -5.366 5.501 1.794
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.248
+    height 2.174
+  done
+  material brown
+  translate 2.775 -17.522 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.511
+    height 3.810
+  done
+  material green
+  translate 2.775 -17.522 2.174
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.450
+    height 2.071
+  done
+  material brown
+  translate 5.855 -6.318 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.949
+    height 3.683
+  done
+  material green
+  translate 5.855 -6.318 2.071
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.459
+    height 2.438
+  done
+  material brown
+  translate -12.822 16.884 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.984
+    height 3.579
+  done
+  material green
+  translate -12.822 16.884 2.438
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.572
+    height 2.922
+  done
+  material brown
+  translate 1.660 -5.908 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.218
+    height 5.146
+  done
+  material green
+  translate 1.660 -5.908 2.922
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.240
+    height 2.138
+  done
+  material brown
+  translate 9.373 -17.453 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.493
+    height 2.597
+  done
+  material green
+  translate 9.373 -17.453 2.138
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.560
+    height 1.976
+  done
+  material brown
+  translate 7.231 -16.845 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.133
+    height 3.011
+  done
+  material green
+  translate 7.231 -16.845 1.976
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.290
+    height 2.632
+  done
+  material brown
+  translate 2.321 -9.206 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.619
+    height 4.051
+  done
+  material green
+  translate 2.321 -9.206 2.632
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.334
+    height 2.246
+  done
+  material brown
+  translate 2.900 -16.757 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.681
+    height 3.869
+  done
+  material green
+  translate 2.900 -16.757 2.246
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.581
+    height 2.732
+  done
+  material brown
+  translate 8.313 11.050 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.256
+    height 3.631
+  done
+  material green
+  translate 8.313 11.050 2.732
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.284
+    height 2.155
+  done
+  material brown
+  translate 10.315 -17.470 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.615
+    height 3.201
+  done
+  material green
+  translate 10.315 -17.470 2.155
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.495
+    height 2.026
+  done
+  material brown
+  translate 18.068 -7.082 0.000
+done
+
+object tree_top
+  shape cone
+    radius 1.073
+    height 3.102
+  done
+  material green
+  translate 18.068 -7.082 2.026
+done
+
+object tree_bot
+  shape cylinder
+    radius 0.436
+    height 1.584
+  done
+  material brown
+  translate 3.987 -10.067 0.000
+done
+
+object tree_top
+  shape cone
+    radius 0.958
+    height 2.539
+  done
+  material green
+  translate 3.987 -10.067 1.584
+done
+
+
+object mountain
+  shape cone
+    radius 15.000
+    height 10.000
+  done
+  material brown
+  translate 20.000 10.000 0.000
+done
+object mountain
+  shape cone
+    radius 6.812
+    height 2.918
+  done
+  material brown
+  translate 19.073 14.734 3.943
+done
+object mountain
+  shape cone
+    radius 5.486
+    height 0.397
+  done
+  material brown
+  translate 18.657 13.940 5.894
+done
+object mountain
+  shape cone
+    radius 0.100
+    height 1.223
+  done
+  material brown
+  translate 21.722 8.792 4.050
+done
+object mountain
+  shape cone
+    radius 1.015
+    height 5.004
+  done
+  material brown
+  translate 26.870 14.127 2.034
+done
+object mountain
+  shape cone
+    radius 2.275
+    height 3.821
+  done
+  material brown
+  translate 16.628 2.567 3.647
+done
+object mountain
+  shape cone
+    radius 0.157
+    height 1.861
+  done
+  material brown
+  translate 16.984 4.528 3.930
+done
+object mountain
+  shape cone
+    radius 1.175
+    height 2.781
+  done
+  material brown
+  translate 17.127 2.748 3.891
+done
+object mountain
+  shape cone
+    radius 0.379
+    height 1.210
+  done
+  material brown
+  translate 16.863 2.246 4.534
+done
+object mountain
+  shape cone
+    radius 0.239
+    height 0.485
+  done
+  material brown
+  translate 16.968 2.230 4.646
+done
+object mountain
+  shape cone
+    radius 0.360
+    height 1.836
+  done
+  material brown
+  translate 17.360 2.583 4.209
+done
+object mountain
+  shape cone
+    radius 0.194
+    height 0.588
+  done
+  material brown
+  translate 17.211 2.531 4.651
+done
+object mountain
+  shape cone
+    radius 0.609
+    height 2.427
+  done
+  material brown
+  translate 15.109 3.082 4.111
+done
+object mountain
+  shape cone
+    radius 0.194
+    height 0.777
+  done
+  material brown
+  translate 14.916 3.341 4.818
+done
+object mountain
+  shape cone
+    radius 0.552
+    height 2.127
+  done
+  material brown
+  translate 15.138 3.288 3.865
+done

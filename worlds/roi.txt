@@ -1,0 +1,18 @@
+mtllib test.mtl
+
+object roi
+  shape model
+    file roi.obj
+  done
+  material shiny
+  scale 0.125 0.125 0.125
+  translate -4 -4 -4
+done
+
+object ball
+  shape sphere
+    radius 0.5
+  done
+  material chrome
+  translate 0 0 -2.5
+done
