@@ -231,7 +231,7 @@ void Cone::draw() const
 {
 	Shape::draw();
 
-	glutSolidCone(m_radius, m_height, 20, 20);
+	//glutSolidCone(m_radius, m_height, 20, 20);
 }
 
 float Cone::my_hits(const Ray &ray,
@@ -445,7 +445,7 @@ void Torus::draw() const
 {
 	Shape::draw();
 
-	glutSolidTorus(m_inner, m_outer, 20, 20);
+	//glutSolidTorus(m_inner, m_outer, 20, 20);
 }
 
 float Torus::my_hits(const Ray &ray,

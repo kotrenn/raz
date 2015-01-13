@@ -96,3 +96,32 @@ set<float> Math::quartic(float a, float b, float c, float d)
 		ret2.insert(*it - a / 4);
 	return ret2;
 }
+
+
+
+float clamp(float x, float a, float b)
+{
+	if (x < a) return a;
+	else if (x > b) return b;
+	else return x;
+}
+
+int randint(int a, int b)
+{
+	return rand() % (b - a + 1) + a;
+}
+
+float randdbl(float a, float b)
+{
+	return (b - a) * random() + a;
+}
+
+float random_01()
+{
+	return random() / (1.0 * RAND_MAX);
+}
+
+float geometric(float p)
+{
+	return log(1 - random_01()) / log(1 - p);
+}

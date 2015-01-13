@@ -1,6 +1,6 @@
 #include "glslprogram.h"
 
-void GLSLProgram::Create(char *vfile, char *gfile, char *ffile)
+void GLSLProgram::Create(const char *vfile, const char *gfile, const char *ffile)
 {
 	CanDoFragmentShader = IsExtensionSupported("GL_ARB_fragment_shader");
 	CanDoGeometryShader = IsExtensionSupported("GL_EXT_geometry_shader4");
@@ -89,18 +89,18 @@ GLSLProgram::GLSLProgram()
 	Create(NULL, NULL, NULL);
 }
 
-GLSLProgram::GLSLProgram(char *vfile, char *gfile, char *ffile)
+GLSLProgram::GLSLProgram(const char *vfile, const char *gfile, const char *ffile)
 {
 	Create(vfile, gfile, ffile);
 }
 
-GLSLProgram::GLSLProgram(char *vfile, char *ffile)
+GLSLProgram::GLSLProgram(const char *vfile, const char *ffile)
 {
 	fflush(stdout);
 	Create(vfile, NULL, ffile);
 }
 
-GLuint GLSLProgram::LoadVertexShader(char *vfile)
+GLuint GLSLProgram::LoadVertexShader(const char *vfile)
 {
 	GLuint shader = glCreateShader(GL_VERTEX_SHADER);
 	if (LoadShader(vfile, shader) != 0)
@@ -117,7 +117,7 @@ GLuint GLSLProgram::LoadVertexShader(char *vfile)
 	}
 }
 
-GLuint GLSLProgram::LoadGeometryShader(char *gfile)
+GLuint GLSLProgram::LoadGeometryShader(const char *gfile)
 {
 	GLuint shader = glCreateShader(GL_GEOMETRY_SHADER_EXT);
 	if (LoadShader(gfile, shader) != 0)
@@ -134,7 +134,7 @@ GLuint GLSLProgram::LoadGeometryShader(char *gfile)
 	}
 }
 
-GLuint GLSLProgram::LoadFragmentShader(char *ffile)
+GLuint GLSLProgram::LoadFragmentShader(const char *ffile)
 {
 	GLuint shader = glCreateShader(GL_FRAGMENT_SHADER);
 	if (LoadShader(ffile, shader) != 0)
@@ -279,9 +279,9 @@ void GLSLProgram::Use(int p)
 	}
 }
 
-int GLSLProgram::GetAttributeLocation(char *name)
+int GLSLProgram::GetAttributeLocation(const char *name)
 {
-	map<char *, int>::iterator pos;
+	map<const char *, int>::iterator pos;
 
 	pos = AttributeLocs.find(name);
 	if (pos == AttributeLocs.end())
@@ -292,7 +292,7 @@ int GLSLProgram::GetAttributeLocation(char *name)
 	return AttributeLocs[name];
 }
 
-void GLSLProgram::SetAttribute(char *name, int val)
+void GLSLProgram::SetAttribute(const char *name, int val)
 {
 	int loc;
 	if ((loc = GetAttributeLocation(name)) >= 0)
@@ -302,7 +302,7 @@ void GLSLProgram::SetAttribute(char *name, int val)
 	}
 }
 
-void GLSLProgram::SetAttribute(char *name, float val)
+void GLSLProgram::SetAttribute(const char *name, float val)
 {
 	int loc;
 	if ((loc = GetAttributeLocation(name)) >= 0)
@@ -312,9 +312,9 @@ void GLSLProgram::SetAttribute(char *name, float val)
 	}
 }
 
-int GLSLProgram::GetUniformLocation(char *name)
+int GLSLProgram::GetUniformLocation(const char *name)
 {
-	map<char *, int>::iterator pos;
+	map<const char *, int>::iterator pos;
 	pos = UniformLocs.find(name);
 	if (pos == UniformLocs.end())
 	{
@@ -324,7 +324,7 @@ int GLSLProgram::GetUniformLocation(char *name)
 	return UniformLocs[name];
 }
 
-void GLSLProgram::SetUniform(char *name, int val)
+void GLSLProgram::SetUniform(const char *name, int val)
 {
 	int loc;
 	if ((loc = GetUniformLocation(name)) >= 0)
@@ -334,7 +334,7 @@ void GLSLProgram::SetUniform(char *name, int val)
 	}
 }
 
-void GLSLProgram::SetUniform(char *name, float val)
+void GLSLProgram::SetUniform(const char *name, float val)
 {
 	int loc;
 	if ((loc = GetUniformLocation(name)) >= 0)
@@ -344,7 +344,7 @@ void GLSLProgram::SetUniform(char *name, float val)
 	}
 }
 
-void GLSLProgram::SetUniform(char *name, float val1, float val2, float val3)
+void GLSLProgram::SetUniform(const char *name, float val1, float val2, float val3)
 {
 	int loc;
 	if ((loc = GetUniformLocation(name)) >= 0)

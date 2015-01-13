@@ -217,7 +217,6 @@ float knot_z(float u, float v)
 
 void Scene::draw()
 {
-	/*
 	list<Shape *>::iterator si;
 	for (si = m_shapes.begin(); si != m_shapes.end(); si++)
 	{
@@ -226,8 +225,8 @@ void Scene::draw()
 		shape->draw();
 		glPopMatrix();
 	}
-	*/
 
+	/*
 	glPushMatrix();
 	glutSolidTeapot(2.0);
 	glPopMatrix();
@@ -267,6 +266,7 @@ void Scene::draw()
 		}
 	}
 	glPopMatrix();
+	*/
 	
 	list<Light *>::iterator li;
 	int i = 1;

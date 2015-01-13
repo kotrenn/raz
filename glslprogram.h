@@ -20,17 +20,17 @@ inline int GetLocal(int flag)
 class GLSLProgram
 {
 private:
-	map<char *, int> AttributeLocs;
-	char *Ffile;
+	map<const char *, int> AttributeLocs;
+	const char *Ffile;
 	unsigned int Fshader;
-	char *Gfile;
+	const char *Gfile;
 	unsigned int Gshader;
 	GLenum InputTopology;
 	GLenum OutputTopology;
 	int Program;
-	char *Vfile;
+	const char *Vfile;
 	unsigned int Vshader;
-	map<char *, int> UniformLocs;
+	map<const char *, int> UniformLocs;
 	bool Verbose;
 
 	static int CurrentProgram;
@@ -40,28 +40,28 @@ private:
 	bool CanDoGeometryShader;
 	bool CanDoVertexShader;
 	int CompileShader(GLuint);
-	void Create(char *, char *, char *);
-	int GetAttributeLocation(char *);
-	int GetUniformLocation(char *);
+	void Create(const char *, const char *, const char *);
+	int GetAttributeLocation(const char *);
+	int GetUniformLocation(const char *);
 	int LinkProgram();
-	GLuint LoadFragmentShader(char *);
-	GLuint LoadGeometryShader(char *);
-	GLuint LoadVertexShader(char *);
+	GLuint LoadFragmentShader(const char *);
+	GLuint LoadGeometryShader(const char *);
+	GLuint LoadVertexShader(const char *);
 	int LoadShader(const char *, GLuint);
 
 public:
 	GLSLProgram();
-	GLSLProgram(char *, char *, char *);
-	GLSLProgram(char *, char *);
+	GLSLProgram(const char *, const char *, const char *);
+	GLSLProgram(const char *, const char *);
 
 	bool IsExtensionSupported(const char *);
-	void SetAttribute(char *, int);
-	void SetAttribute(char *, float);
+	void SetAttribute(const char *, int);
+	void SetAttribute(const char *, float);
 	void SetInputTopology(GLenum);
 	void SetOutputTopology(GLenum);
-	void SetUniform(char *, int);
-	void SetUniform(char *, float);
-	void SetUniform(char *name, float val1, float val2, float val3);
+	void SetUniform(const char *, int);
+	void SetUniform(const char *, float);
+	void SetUniform(const char *name, float val1, float val2, float val3);
 	void SetVerbose(bool);
 	void Use();
 	void Use(int);
