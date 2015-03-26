@@ -1,7 +1,36 @@
-A scene renderer in OpenGL
+#Raz
+Timeline:  Fall 2012, Winter 2015
 
-Author: Ramona Seay
-        rgseay@ncsu.edu
+A 3d scene renderer which supports interactive viewing in OpenGL and realistic rendering with ray tracing.
+
+During my time at Clemson, I learned a great deal about computer graphics.  It was one of the big things our department focused on.  A result of this is that I ended up enjoying making ray tracers.  They make pretty pictures.  They also work well for showing off.
+
+When I went to graduate school at NC State, I took the graduate level computer graphics course for funsies.  Plus it counted for core requirements.  The class gave me more experience working with OpenGL through various projects.  One such project was the ray tracer project, where students were required to make their own rendering programs.  The basic setup was that we had to render a scene in both OpenGL and a ray tracer method, and users could press a key to switch between the two rendering modes.  I was one of the lucky couple who had experience with ray tracing, so the project basics were simple at the time.
+
+Thankfully the professor provided many opportunities for extra credit.  Particularly, he laid out several features to implement, from setting up a camera to describing a scene with various objects.  We did still have to be able to read in and render models in .obj files, but there was opportunity to also support .mtl files, which describe surface materials.  I had fun with this, and put in my own little nifty things as well.
+
+My main original contribution was being able to move around in the scene and look at it from different angles.  In the OpenGL mode, I based the controls around the first person controls which had become common in the game industry.  Additionally, I supported these in the ray tracing mode as well.  The result was that users could fly around a scene just like before, but it would be a little more "photo realistic" since it was being rendered using ray tracing rather than basic OpenGL methods.  The downside is that ray tracing is *slow*.  To counter this, I implemented a technique we saw in a video early on in the semester.  The idea was that when moving around, we can render everything in a much lower resolution.  Once the user has stopped moving, we can then use this time to render everything in finer detail.
+
+A couple years later I wanted to revisit my computer graphics days and create some actual nice art.  During my undergrad I spent a night or two preparing a simple iceberg in a low-poly style reminiscent of computer graphics from the 1980's.  The resulting image can be found at http://cs.clemson.edu/~rseay/iceberg.png.  Unfortunately I no longer have access to the source code or the scene data involved.
+
+Thus Raz was born.  I would take my accumulated knowledge of computer graphics along with my maturity as a programmer to make a general rendering program that I could use for my own artistic endeavors.  I wanted to start with the graduate course project as a simple code base, since I liked the idea of a preview mode with OpenGL.
+
+The main goals were:
+
+- Incorporate standard image files (.png, .jpg, ...)
+- Support industry standard files (.obj, .mtl, ...)
+- Experiment with computer graphics research such as volumetric rendering
+- Develop an interface for ease of editing
+- Add support for creating animations
+
+School and real life put the project on indefinite hiatus.  I definitely wish to return to the project once I have the time.  Computer graphics is definitely an interesting artistic medium and the technical side provides many interesting challenges.  For now though, it will have to wait for the future.
+
+
+The remainder of this readme is documentation on the controls and files provided.  This was written a while back and may not be the best.  One should also keep in mind that the current form of the codebase is INOPERABLE.  I did not finish reorganizing everything.  It is possible to hack some portions together to make it work, but at the moment, not so much.  For now, it provides some examples of my C++ code.
+
+
+===================
+
 
 Renders a scene.  Pressing the space bar will switch between
 using OpenGL to render and using ray tracing to render.  Pressing
